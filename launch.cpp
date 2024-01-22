@@ -174,7 +174,9 @@ void update_frame(Tank *player, list<Tank> *tanks, list<Bullet> *bullets, SDL_Te
     else
       if(player->collition(*b)){
         player->dead = true;
-        b->team = -1;
+        b->color.r = 255;
+        b->color.g = 255;
+        b->color.b = 255;
       }
     
     if(b->x < -b->hit.w || b->y < -b->hit.h || b->x > SCREEN_WIDTH || b->y > SCREEN_HEIGHT || hit)

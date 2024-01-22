@@ -45,11 +45,6 @@ Tank :: Tank (int x, int y, int size, int team, SDL_Texture *tank){
     this->size = size;
     this->team = team;
     switch(team){
-        case -1:
-            color.r = 255;
-            color.g = 255;
-            color.b = 255;
-            break;
         case 0:
             color.r = 255;
             color.g = 0;
