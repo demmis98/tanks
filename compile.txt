@@ -1,1 +1,1 @@
-gcc -o launch launch.cpp tank.cpp -lSDL2 -lSDL2main -lSDL2_image -lstdc++ -mwindows
+gcc -o launch launch.cpp tank.cpp -lSDL2 -lSDL2main -lSDL2_image -lstdc++ -m32 -mwindows
